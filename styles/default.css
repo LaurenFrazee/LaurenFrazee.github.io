@@ -1,0 +1,59 @@
+body{
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(135, 190, 192));
+   
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+nav{
+    background-color: rgba(200, 200, 200, .3);
+    box-shadow: 5px 10px 5px rgba(19, 33, 13, 0.605);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 30px;
+    margin-bottom: 4em;
+    
+
+}
+
+nav> a{
+    color: black;
+    font-size: 16x ;
+    padding:2em;
+}
+a:visited{
+    color: rgb(16, 78, 8);
+}
+a:hover{
+    color:rgb(119, 183, 0);
+}
+
+footer{
+    text-align: center;
+    padding:2em;
+   
+}
+figure{
+    display:block;
+    margin: 0 auto;
+}
+figure, img{
+    width:30vh;
+    height: auto;
+}
+figcaption{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    padding-top:1em;
+    padding-bottom: 2em;
+}
+.bio{
+    font-size: 20px;
+}
+
+.q{
+    font-weight: 800;
+}
+
