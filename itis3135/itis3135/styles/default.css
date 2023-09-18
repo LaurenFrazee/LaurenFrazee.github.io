@@ -9,30 +9,37 @@ body{
 }
 
 nav{
-    background-color: rgba(200, 200, 200, .3);
+    background-color: rgba(6, 24, 10);
     box-shadow: 5px 10px 5px rgba(19, 33, 13, 0.605);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     min-height: 30px;
     margin-bottom: 4em;
-    
+    padding: 1em;
+    color: aquamarine;
 
 }
 
 nav> a{
-    color: black;
+    
     font-size: 16x ;
     padding:2em;
+    color: rgba(169, 248, 162, 0.911);
+
+    
 }
-a:visited{
-    color: rgb(16, 78, 8);
-}
+
 a:hover{
-    color:rgb(119, 183, 0);
+    color:rgb(242, 243, 240);
+}
+footer a{
+    color: rgba(169, 248, 162, 0.911);
 }
 
 footer{
     text-align: center;
     padding:2em;
+    background-color: rgb(6, 24, 10);
+    color: aquamarine;
    
 }
 figure{
