@@ -1,6 +1,7 @@
 body{
-    background-image: linear-gradient( rgb(255, 255, 255), rgb(135, 190, 192));
-   
+    background-image: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)),
+    url("/itis3135/images/marblebg.jpg");
+    background-repeat: no-repeat;
     padding: 3px;
     font-size: 20px;
     text-align: center;
@@ -8,30 +9,37 @@ body{
 }
 
 nav{
-    background-color: rgba(200, 200, 200, .3);
+    background-color: rgba(6, 24, 10);
     box-shadow: 5px 10px 5px rgba(19, 33, 13, 0.605);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     min-height: 30px;
     margin-bottom: 4em;
-    
+    padding: 1em;
+    color: aquamarine;
 
 }
 
 nav> a{
-    color: black;
+    
     font-size: 16x ;
     padding:2em;
+    color: rgba(169, 248, 162, 0.911);
+
+    
 }
-a:visited{
-    color: rgb(16, 78, 8);
-}
+
 a:hover{
-    color:rgb(119, 183, 0);
+    color:rgb(242, 243, 240);
+}
+footer a{
+    color: rgba(169, 248, 162, 0.911);
 }
 
 footer{
     text-align: center;
     padding:2em;
+    background-color: rgb(6, 24, 10);
+    color: aquamarine;
    
 }
 figure{
@@ -39,7 +47,7 @@ figure{
     margin: 0 auto;
 }
 figure, img{
-    width:30vh;
+    width:50%;
     height: auto;
 }
 figcaption{
@@ -56,15 +64,16 @@ figcaption{
 .q{
     font-weight: 800;
 }
-
- table tr:first-child{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
+.updated-table{
+    margin:auto;
+}
+.updated-table th{
+    background-color: black;
+    color:beige;
+}
+.updated-table tr:nth-child(even) {
+    background-color: #f2f2f2;
   }
-  tr:nth-child(odd) {
-    background-color: #ffffff;
-  }
-  
-  table tr:nth-child(even) {
-    background-color: #ddd;
-  }
+.simple-table{
+    margin:auto
+}
