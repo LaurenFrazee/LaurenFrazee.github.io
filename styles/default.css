@@ -1,51 +1,86 @@
+:root{
+  --clear_black:rgba(14, 4, 4, 0.027);
+  --dark_shadow:5px 10px 5px rgba(132, 170, 175, 0.605);
+  --border_color_a:  aquamarine;
+  --a_background_active:-- rgba(10, 85, 81, 0.322);
+  font-family: 'Bitter'Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  color: aliceblue;
+
+ 
+}
+
+
 body {
     background-image:
-      linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      linear-gradient(rgb(1, 36, 33), rgba(0, 0, 0, 0.897)),
       url("/itis3135/images/marblebg.jpg");
-  
     padding: 3px;
     font-size: 20px;
     text-align: center;
   
   }
+  header{
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 100px;
+    box-shadow: var(--dark_shadow);
+    color: aliceblue;
+      
+    
+  }
+  a{
+    text-decoration: none;
+    
+  }
   
   nav {
-    background-color: rgba(6, 24, 10);
-    box-shadow: 5px 10px 5px rgba(19, 33, 13, 0.605);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 30px;
     margin-bottom: 4em;
-    padding: 1em;
-    color: aquamarine;
-  
+    padding-bottom: 1em;
+    color: rgb(26, 170, 122);
+   
+  }
+  ul{
+    list-style-type: none;
+    
   }
   
-  nav > a  {
+  .foot1> a, nav > a  {
   
-    font-size: 16px;
-    padding: 2em;
-    color: rgba(169, 248, 162, 0.911);
-  
-  
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px;
+    color: rgba(12, 248, 158, 0.911);
+    border-radius: 100px;  
+  }
+   .foot1 > a:hover , nav > a:hover, a:active {
+    color: ivory;
+    background-color: rgba(10, 85, 81, 0.322);
+    border-color: aquamarine;
+    border-style: solid;
+    box-shadow: 5px 10px 5px rgba(19, 33, 13, 0.605);
+   
   }
   
-  footer a {
-    color: rgba(169, 248, 162, 0.911);
+  footer, footer a {
+    color: rgba(82, 234, 240, 0.911)
   }
-  
-  a:hover {
-    color: rgb(242, 243, 240);
-  }
-  
-  
-  
+    
   footer {
     text-align: center;
-    padding: 2em;
-    background-color: rgb(6, 24, 10);
-    color: aquamarine;
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color: rgba(6, 24, 21, 0.521);
+    height: fit-content;
+    margin-top:60px;
   
   }
+  footer a:hover{
+    color: white;
+    font-weight: 600;
+  }
+
   
   figure {
     display: block;
@@ -73,11 +108,19 @@ body {
   .q {
     font-weight: 800;
   }
-  
-  .updated-table {
-    margin: auto;
+  table{
+    text-align: left;
+    background-color:black ;
+    border-style: solid;
+    
   }
-  
+  .updated-table {
+    text-align: left;
+     
+  }
+  th, td{
+    padding: 15px;
+    }
   .updated-table th {
     background-color: black;
     color: beige;
@@ -85,9 +128,17 @@ body {
   
   .updated-table tr:nth-child(even) {
     background-color: #f2f2f2;
+    color: black;
+  }
+  .updated-table tr:nth-child(odd) {
+    background-color: #d3cece;
+    color: black;
   }
   
   .simple-table {
     margin: auto;
   }
-  
+  .center{
+    margin-left: auto;
+    margin-right: auto;
+  }
