@@ -1,79 +1,93 @@
-body{
-    background-image: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)),
-    url("/itis3135/images/marblebg.jpg");
-
+body {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url("/itis3135/images/marblebg.jpg");
+  
     padding: 3px;
     font-size: 20px;
     text-align: center;
-    
-}
-
-nav{
+  
+  }
+  
+  nav {
     background-color: rgba(6, 24, 10);
     box-shadow: 5px 10px 5px rgba(19, 33, 13, 0.605);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 30px;
     margin-bottom: 4em;
     padding: 1em;
     color: aquamarine;
-
-}
-
-nav> a{
-    
-    font-size: 16x ;
-    padding:2em;
+  
+  }
+  
+  nav > a  {
+  
+    font-size: 16px;
+    padding: 2em;
     color: rgba(169, 248, 162, 0.911);
-
-    
-}
-
-a:hover{
-    color:rgb(242, 243, 240);
-}
-footer a{
+  
+  
+  }
+  
+  footer a {
     color: rgba(169, 248, 162, 0.911);
-}
-
-footer{
+  }
+  
+  a:hover {
+    color: rgb(242, 243, 240);
+  }
+  
+  
+  
+  footer {
     text-align: center;
-    padding:2em;
+    padding: 2em;
     background-color: rgb(6, 24, 10);
     color: aquamarine;
-   
-}
-figure{
-    display:block;
+  
+  }
+  
+  figure {
+    display: block;
     margin: 0 auto;
-}
-figure, img{
-    width:50%;
+  }
+  
+  figure,
+  img {
+    width: 50%;
     height: auto;
-}
-figcaption{
+  }
+  
+  figcaption {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-size: 1rem;
-    padding-top:1em;
+    padding-top: 1em;
     padding-bottom: 2em;
-}
-.bio{
+  }
+  
+  .bio {
     font-size: 20px;
-}
-
-.q{
+  }
+  
+  .q {
     font-weight: 800;
-}
-.updated-table{
-    margin:auto;
-}
-.updated-table th{
+  }
+  
+  .updated-table {
+    margin: auto;
+  }
+  
+  .updated-table th {
     background-color: black;
-    color:beige;
-}
-.updated-table tr:nth-child(even) {
+    color: beige;
+  }
+  
+  .updated-table tr:nth-child(even) {
     background-color: #f2f2f2;
   }
-.simple-table{
-    margin:auto
-}
+  
+  .simple-table {
+    margin: auto;
+  }
+  
