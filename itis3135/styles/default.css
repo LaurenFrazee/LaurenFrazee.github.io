@@ -7,7 +7,7 @@
   font-weight: 400;
   color: rgb(215, 225, 225);
   --azure: rgb(27, 159, 163);
-
+  
 }
 
 h1 {
@@ -25,6 +25,9 @@ h3 {
 p {
   font-size: 20px;
   line-height: 1.5em;
+}
+a{
+  color:  rgb(240, 228, 209);
 }
 
 /*body*********************************************************/
@@ -255,6 +258,18 @@ input[type="submit"] {
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
+}
+
+.web-eval{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  width:50%
+}
+.web-eval li{
+  list-style: none;
+  text-align: left;
+  margin-bottom: 2em;
 }
 
 /*form***********************************************************/
