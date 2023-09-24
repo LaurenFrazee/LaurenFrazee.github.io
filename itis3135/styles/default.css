@@ -271,5 +271,8 @@ input[type="submit"] {
   text-align: left;
   margin-bottom: 2em;
 }
-
+.contract{
+  width: 80%;
+  margin:auto;
+}
 /*form***********************************************************/
