@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lauren Frazee's Lucid Fox || ITIS 3135 FORMS</title>
+    <link rel="stylesheet" href="styles/default.css">
+  </head>
+
+  <body>
+    <header>
+      <h1> Lauren Frazee's Lucid Fox Forms|| ITIS 3135</h1>
+      <div data-include="/itis3135/components/nav.html"></div>
+    </header>
+
+    <!--form-->
+    <form method="post"action="#">
+
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+    
+      </fieldset>
+      <fieldset>
+        <h4>What type of site are you interested in building:</h4>
+        <label for="personal-website"><input id="personal-website" type="radio" name="account-type" class="inline" /> Personal Website</label>
+        <label for="business-website"><input id="business-website" type="radio" name="account-type" class="inline" /> Business Website</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Website Ad</option>
+            <option value="2">Flyer</option>
+            <option value="3">Friend</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset the form</button>
+
+    </form>
+    <!--
+
+        name
+phone number
+email address
+1 set of checkboxes,
+1 set of radio buttons
+1 select box (drop down menu)
+1 button for resetting
+1 button for submitting.
+These form elements could be used to ask the user about any information you like, but have fun with it so that you have a somewhat realistic use of all the elements.
+In order to validate, the form must contain the action attribute. You can use action=”#” for this activity, to specify that nothing happens when submitted.
+Use each of the following attributes where appropriate (i.e. it doesn't make sense to submit without a name)
+required
+size
+placeholder
+use form validation wherever appropriate - i.e. specific input types such as number, email, url.
+Add label tag to each input type.
+Verify there are no html validation errors.
+Part 3: Styling the CSS 
+Modify your default.css to include styling of these form elements:
+Change the background color of the button to a dark color and the text color to something light.
+Apply 4 CSS properties to any of your input elements, such as colors, fonts, sizes, or layout.
+Verify there are no css validation errors.
+
+    -->
+
+    <div data-include="/itis3135/components/footer.html"></div>
+    <script src="/itis3135/scripts/HTMLInclude.min.js"></script>
+  </body>
+
+</html>

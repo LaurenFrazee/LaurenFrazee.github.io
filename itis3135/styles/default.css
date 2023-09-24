@@ -1,144 +1,260 @@
-:root{
-  --clear_black:rgba(14, 4, 4, 0.027);
-  --dark_shadow:5px 10px 5px rgba(132, 170, 175, 0.605);
-  --border_color_a:  aquamarine;
-  --a_background_active:-- rgba(10, 85, 81, 0.322);
+:root {
+  --clear_black: rgba(14, 4, 4, 0.027);
+  --dark_shadow: 5px 10px 5px rgba(132, 170, 175, 0.605);
+  --border_color_a: aquamarine;
+  --a_background_active: -- rgba(10, 85, 81, 0.322);
   font-family: 'Bitter'Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
-  color: aliceblue;
+  color: rgb(215, 225, 225);
+  --azure: rgb(27, 159, 163);
 
- 
 }
 
+h1 {
+  font-size: 40px;
+}
 
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/*body*********************************************************/
 body {
-    background-image:
-      linear-gradient(rgb(1, 36, 33), rgba(0, 0, 0, 0.897)),
-      url("/itis3135/images/marblebg.jpg");
-    padding: 3px;
-    font-size: 20px;
-    text-align: center;
-  
-  }
-  header{
-    padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.568);
-    border-radius: 100px;
-    box-shadow: var(--dark_shadow);
-    color: aliceblue;
-      
-    
-  }
-  a{
-    text-decoration: none;
-    
-  }
-  
-  nav {
-    min-height: 30px;
-    margin-bottom: 4em;
-    padding-bottom: 1em;
-    color: rgb(26, 170, 122);
-   
-  }
-  ul{
-    list-style-type: none;
-    
-  }
-  
-  .foot1> a, nav > a  {
-  
-    font-size: 25px;
-    font-weight: 400;
-    padding: 10px;
-    color: rgba(12, 248, 158, 0.911);
-    border-radius: 100px;  
-  }
-   .foot1 > a:hover , nav > a:hover, a:active {
-    color: ivory;
-    background-color: rgba(10, 85, 81, 0.322);
-    border-color: aquamarine;
-    border-style: solid;
-    box-shadow: 5px 10px 5px rgba(19, 33, 13, 0.605);
-   
-  }
-  
-  footer, footer a {
-    color: rgba(82, 234, 240, 0.911)
-  }
-    
-  footer {
-    text-align: center;
-    padding-top:20px;
-    padding-bottom: 20px;
-    background-color: rgba(6, 24, 21, 0.521);
-    height: fit-content;
-    margin-top:60px;
-  
-  }
-  footer a:hover{
-    color: white;
-    font-weight: 600;
-  }
+  background-image:
+    linear-gradient(to right, rgb(7, 14, 16), rgb(2, 17, 20), rgba(0, 60, 77, 0.897)),
+    url("/itis3135/images/marblebg.jpg");
+  text-align: center;
 
+}
+
+header {
+  color: rgb(216, 198, 164);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Nav*********************************************************/
+nav {
+  min-height: 30px;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  color: var(--azure);
+
+
+}
+
+ul {
+  list-style-type: square;
+}
+
+/*footer*********************************************************/
+.foot1>a,
+nav>a {
+  font-weight: 400;
+  padding: 6px;
+  /*color: rgba(196, 242, 244, 0.541);*/
+  color: rgb(215, 225, 225);
+  border-right: 2px solid #d3cece;
+  font-size: 1.2em;
+
+}
+
+.foot1>a:hover,
+nav>a:hover,
+a:active {
+
+  background-color: rgba(255, 255, 255, 0.11);
+  border-color: rgb(196, 202, 200);
+  border-style: solid;
+  box-shadow: 0px 0px 10px rgba(35, 37, 37, 0.605);
+
+  font-weight: 800;
+
+}
+
+footer,
+footer a {
+  color: rgba(196, 242, 244, 0.911)
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(6, 24, 21, 0.155);
+  height: fit-content;
+  margin-top: 60px;
+ 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+footer a:hover {
+  color: white;
+  font-weight: 600;
+}
+
+/*figure*************************************************/
+
+figure {
+  display: block;
+  margin: 0 auto;
+
+}
+
+figure img {
+  width: 40vh;
+  height: auto;
+}
+
+figcaption {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+/**container***************************/
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  font-weight: 800;
+}
+
+.outer_card {
+  box-shadow: 1px -1px 9px 1px rgba(6, 5, 1, 0.985);
+  background-color: rgba(232, 236, 236, 0.068);
+  text-align: left;
+  padding: 15px;
+  margin: 10px;
+  width: 75vh;
+  border-radius: 5px;
+  color: rgb(240, 231, 216);
+  ;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*quick format***********************************************/
+
+.indent {
+  padding-left: 15px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*table****************************************************/
+table {
+  text-align: left;
+  background-color: black;
+  border-style: solid;
+
+}
+
+.updated-table {
+  text-align: left;
+
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+.updated-table th {
+  background-color: black;
+  color: beige;
+}
+
+.updated-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.updated-table tr:nth-child(odd) {
+  background-color: #d3cece;
+  color: black;
+}
+
+.simple-table {
+  margin: auto;
+}
+
+form{
+  background: #01242b;
+  width: 100%;
+}
+
+fieldset{
+  border:none;
+  padding: 2rem 0;
+  border-bottom:  solid rgb(216, 198, 164);
+  width: 50%;
+  margin: auto;
   
-  figure {
-    display: block;
-    margin: 0 auto;
-  }
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
   
-  figure,
-  img {
-    width: 50%;
-    height: auto;
-  }
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
   
-  figcaption {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    font-size: 1rem;
-    padding-top: 1em;
-    padding-bottom: 2em;
-  }
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: rgb(2, 22, 22);
+  color:rgb(216, 198, 164);
+  border:none
   
-  .bio {
-    font-size: 20px;
-  }
-  
-  .q {
-    font-weight: 800;
-  }
-  table{
-    text-align: left;
-    background-color:black ;
-    border-style: solid;
-    
-  }
-  .updated-table {
-    text-align: left;
-     
-  }
-  th, td{
-    padding: 15px;
-    }
-  .updated-table th {
-    background-color: black;
-    color: beige;
-  }
-  
-  .updated-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-    color: black;
-  }
-  .updated-table tr:nth-child(odd) {
-    background-color: #d3cece;
-    color: black;
-  }
-  
-  .simple-table {
-    margin: auto;
-  }
-  .center{
-    margin-left: auto;
-    margin-right: auto;
-  }
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: rgb(0, 0, 0);
+  min-width: 300px;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+/*form***********************************************************/
