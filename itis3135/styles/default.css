@@ -1,12 +1,12 @@
 :root {
   --gold: rgb(245, 207, 138);
-  --light_gold: color: rgb(216, 198, 164);
+  --light_gold:rgb(216, 198, 164);
   --just_pale:rgb(240, 231, 216);
   --background: linear-gradient(to right, rgb(7, 14, 16), rgb(2, 17, 20), rgba(0, 60, 77, 0.897)),
   url("/itis3135/images/marblebg.jpg");
-  --whitish_blue: color: rgb(215, 225, 225);
-  --main-box-shadow:box-shadow: 0px 0px 10px rgba(35, 37, 37, 0.605);
-  font-family: 'Bitter'Verdana, Geneva, Tahoma, sans-serif;
+  --whitish_blue:rgb(215, 225, 225);
+  --main-box-shadow:0px 0px 10px rgba(35, 37, 37, 0.605);
+  font-family: 'Bitter' Tahoma, sans-serif;
   font-weight: 400;
   color: rgb(215, 225, 225);
   --azure: rgb(27, 159, 163);
@@ -48,6 +48,9 @@ body {
 header {
   color: rgb(216, 198, 164);
 }
+header > nav {
+ 
+}
 
 a {
   text-decoration: none;
@@ -56,12 +59,19 @@ a {
 /*Nav*********************************************************/
 nav {
   min-height: 30px;
-  margin-bottom: 2em;
-  padding-bottom: 1em;
-  color: var(--azure);
-
+  margin:auto;
+  color: var(--gold);
+  margin: auto;
+  height: fit-content;
+  padding:2px;
 
 }
+.secondary-nav{
+  margin-top: 1px;
+  background-color: #ffffff18;
+}
+
+
 
 ul {
   list-style-type: square;
@@ -69,26 +79,30 @@ ul {
 
 /*footer*********************************************************/
 .foot1>a,
-nav>a {
+nav>a, .secondary-nav>a {
   font-weight: 400;
   padding: 6px;
   /*color: rgba(196, 242, 244, 0.541);*/
   color: rgb(215, 225, 225);
-  border-right: 2px solid rgb(245, 207, 138);;
+  border-color: rgba(215, 225, 225, 0);
+  border-style: solid;  
   font-size: 1.2em;
 
 }
 
+
+
 .foot1>a:hover,
 nav>a:hover,
-a:active {
+a:active,
+p>a:hover{
 
-  background-color: rgba(255, 255, 255, 0.11);
-  border-color: rgb(215, 225, 225);
+  background-color: var(--just_pale);
+  border-color: var(--gold);
   border-style: solid;
   box-shadow: 0px 0px 10px rgba(35, 37, 37, 0.605);
-  font-weight: 800;
-  color:var(--just_pale)
+  color: rgb(0, 59, 61);
+
 
 }
 
@@ -104,15 +118,12 @@ footer {
   background-color: rgba(6, 24, 21, 0.155);
   height: fit-content;
   margin-top: 60px;
- 
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 footer a:hover {
-  color: white;
-  font-weight: 600;
+  color:var(--whitish_blue);
+  background-color: rgb(7, 52, 70);
+
 }
 
 /*figure*************************************************/
@@ -188,10 +199,17 @@ figcaption {
 }
 
 /*table****************************************************/
+ .data ul{
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5;
+}
 table {
   text-align: left;
   background-color: black;
   border-style: solid;
+  
 
 }
 
@@ -204,7 +222,13 @@ th,
 td {
   padding: 15px;
 }
-
+figure .updated-table{
+  margin: auto;
+}
+.updated-table{
+  margin: auto;
+  
+}
 .updated-table th {
   background-color: black;
   color: beige;
@@ -295,5 +319,10 @@ input[type="submit"] {
 .contract p{
  
   text-align: justify;
+}
+p > a{
+  color:var(--gold);
+  border-color: rgba(215, 225, 225, 0);
+  border-style: solid;
 }
 /*form***********************************************************/
