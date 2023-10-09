@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Lauren Frazee's Lucid Fox || ITIS 3135 First Scripts</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/defaultscripts.js"></script> 
+    </head>
+<body>
+    <header>
+        <div class="nav-bars">
+        <div data-include="components/header.html"></div>
+        <div data-include="components/secondary-nav.html"></div>
+        </div>
+    </header>
+    
+        <h3 id="date-time"></h3>
+
+    
+    <form id="greeting" method="post">
+        <fieldset>  
+          <label for="first-name">Enter your name: <input id="first-name" name="first-name" type="text" required /></label>
+          <label for="emotion">How do you feel: <input id="emotion" name="emotion" type="text" required /></label>
+         <button type="button" onclick="myFunction();" class="submit" type="submit">Submit</button> 
+        </fieldset>
+        
+
+        <fieldset id="getPolygon">  
+          <label for="fav-number">Enter your favorite number: <input id="fav-number" name="fav-number"
+             type="number" min="0" max="10"  required /></label>
+        </fieldset>
+        <button type="button" onclick="getPoly();" class="submit" type="submit">Submit</button>
+      </form>
+
+      <button type="button" onclick="getSpeed();" class="submit" type="submit">Is the fox faster than you? </button>
+      <button type="button" onclick="calculateDen();" class="submit" type="submit">Create a fox den!</button>
+      <button type="button" onclick="calculateDistance();" class="submit" type="submit">Average distance the fox ran this week</button>
+      <button type="button" onclick="foxFact();" class="submit" type="submit">Get a fox fact</button>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+  </body>
+</html>
