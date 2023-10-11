@@ -289,4 +289,22 @@ button:active{
   color: var(--teal);
 
 }
+.projectDoc{
+  text-align: left;
+  margin: auto;
+  width:70%;
+  padding: 1px 2.5em 2.5em 2.5em;
+  line-height: 2;
+  background-color: rgba(252, 252, 252, 0.096);
+  font-size: 22px;
+}
+.projectDoc li{
+  padding: 10px;
+  
+}
+.wireframe{
+  margin:inherit;
+  text-align: center;
+}
+
 /*form***********************************************************/
