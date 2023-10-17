@@ -20,15 +20,28 @@ h1 {  font-size: 40px;color: var(--gold);}
 h2 { font-size: 30px; color: var(--teal);}
 h3{ font-size: 26px; color:var(--teal);}
 p { font-size: 20px; line-height: 1.5em; color:var(--whitish_blue);}
-a{ color:  rgb(240, 228, 209); text-decoration: none;}
+a{ color:  rgb(240, 228, 209); text-decoration: none;}a:hover{color:var(--teal)}a:active{color:var(--gold); }
 
 /*body*********************************************************/
 body {
   background-image:
     linear-gradient(to right, rgb(7, 14, 16), rgb(2, 17, 20), rgba(0, 60, 77, 0.897));
   text-align: center;
+  width: 100vw;
+  min-height: 400px;
+  
 }
-
+header {
+  margin: 10px;
+}
+main{
+  margin-bottom: 11em;
+}
+.emmet>section{
+  margin: auto;
+  padding: 1em;
+  padding: 2em;
+}
 /*Nav*********************************************************/
 nav {
   min-height: 30px;
@@ -37,41 +50,43 @@ nav {
   margin: auto;
   height: fit-content;
   padding:2px;
-  
 }
+
 .secondary-nav{
   margin-top: 5px;
+  margin-bottom: 6vh;
+  background-color: rgba(240, 248, 255, 0.062);
 }
 ul {
   list-style-type: square;
 }
-/*footer*********************************************************/
 nav>a, .secondary-nav>a
 {
   font-weight: 400;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  color:var(--whitish_blue);
   font-size: 1.1em;
   padding-bottom: 5px;
   border-bottom: solid rgba(255, 255, 255, 0);
+  
 }
-nav>a:hover,p>a:hover, footer>a:hover
-{
-  color: var(--gold);
-}
-nav>a:active, footer>a:active{
-  color: var(--teal);
-}
+
 footer
 {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: rgba(6, 24, 21, 0.155);
+  background-color: rgb(6, 24, 21);
+  margin-top: auto;
+  width: 100%;
+  padding-top:1em;
   height: fit-content;
-  margin-top: 60px;
+  position:absolute;
+  
+
+
 }
+html {
+  scroll-behavior: smooth;
+  }
 footer>a{
   margin: 10px;
 }
@@ -154,6 +169,7 @@ table {
   text-align: left;
   background-color: black;
   border-style: solid;
+  margin: auto;
 }
 .updated-table {
   text-align: left;
@@ -208,7 +224,6 @@ color: var(--just_pale);
 input,
 textarea,
 select {
-
   margin: .5em auto;
   min-height: 2em;
   background-color: rgb(1, 33, 39);
@@ -253,7 +268,6 @@ option{
 
 }
 .contract p{
- 
   text-align: justify;
 }
 p > a{
@@ -269,6 +283,7 @@ p>a:hover{
 }
 .text-divider{
   color: var(--teal);
+  text-shadow: 2px 1px 4px #5faca5;
 }
 
 button{
@@ -305,6 +320,15 @@ button:active{
 .wireframe{
   margin:inherit;
   text-align: center;
+}
+span{
+  font-weight: bold;
+  color: var(--gold);
+  margin-right: 1vw;
+}
+section{
+  text-align: left;
+ 
 }
 
 /*form***********************************************************/
