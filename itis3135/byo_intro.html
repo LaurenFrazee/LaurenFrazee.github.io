@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Lauren Frazee's Lucid Fox || ITIS 3135 First Scripts</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/survey.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="nav-bars">
+        <div data-include="components/header.html"></div>
+        <div data-include="components/secondary-nav.html"></div>
+        </div>
+    </header>
+    <main>
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form id="buildPageForm">
+      
+        <label for="name">Name:</label>
+        <input  type="text" id="name" name="name" required>
+        <button onclick="displayName()"type="button" class="byo_form_button" id="nameButton">Confirm</button>
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" name="mascot" required>
+        <button type="button" class="byo_form_button" id="mascotButton">Confirm</button>
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" accept=".png, .jpg" required>
+        <label for="caption">Image Caption:</label>
+        <input type="text" id="caption" name="caption" required>
+        <label for="courses">Courses:</label>
+        <div id="courseText"></div>
+        <button type="button" onclick="addCourse()">Add Course</button>
+        <label class="agree" for="agree"> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+        <input type="checkbox" id="agree" name="agree" value="agree">
+
+        <button class="submitForm"><input type="submit"></button>
+    </form>
+
+   
+   
+</body>
+</html>
+
+    </main>
+    
+       
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+  </body>
+</html>

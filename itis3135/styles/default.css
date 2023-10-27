@@ -81,8 +81,6 @@ footer
   height: fit-content;
   position:absolute;
   
-
-
 }
 html {
   scroll-behavior: smooth;
@@ -94,11 +92,13 @@ footer>a{
 /*figure*************************************************/
 figure {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.903), 0 6px 20px 0 rgb(0, 0, 0);
   width:40vh;
-  height: 40vh;
-  padding-bottom:60px ;
+  height: fit-content;
+  padding-bottom:10px ;
   padding-top: 10px;
 }
 .intro-picture{
@@ -220,11 +220,17 @@ fieldset:last-of-type {
 label {
 display: block;
 color: var(--just_pale);
+margin-top: 2em;
+margin-bottom:5px;
+
+}
+label.agree{
+  text-align: left;
+
 }
 input,
 textarea,
 select {
-  margin: .5em auto;
   min-height: 2em;
   background-color: rgb(1, 33, 39);
   color:var(--light_gold);
@@ -234,13 +240,14 @@ select {
   
 }
 input[type="submit"] {
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #dedeeb;
-  border-color: rgb(0, 0, 0);
-  min-width: 300px;
+background-color: none;
 }
+input[type="file"] {
+  padding: 10px 10px;
+
+  }
+
+
 option{
   font-size: 15px;
 }
@@ -285,9 +292,14 @@ p>a:hover{
   color: var(--teal);
   text-shadow: 2px 1px 4px #5faca5;
 }
-
+.submitForm{
+  display: block;
+  margin: 10px auto;
+  background-color: rgba(223, 235, 245, 0.137);
+}
 button{
-  margin:10px;
+  display:inline;
+  margin-top:10px;
   background: rgba(2, 194, 143, 0);
   padding: 10px;
   color: var(--just_pale);

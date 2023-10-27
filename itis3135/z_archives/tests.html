@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Lauren Frazee's Lucid Fox || ITIS 3135 First Scripts</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/testscripts.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="nav-bars">
+        <div data-include="components/header.html"></div>
+        <div data-include="components/secondary-nav.html"></div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div id="nameSection">
+            <label for="name">Name:</label>
+            <input  type="text" id="name" name="name" required>
+            
+            
+            </div>
+
+            <div id="mascotSection">
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" name="mascot" required>
+                
+            </div>
+
+            <div id="imageSection">
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept=".png, .jpg" required>
+                <label for="caption">Image Caption:</label>
+                <input type="text" id="caption" name="caption" required>
+               
+            </div>
+
+            <div id="aboutMe">
+                <label id="bg" for="personal-background">Personal Background:</label>
+                <input type="text" id="personal-background" name="personal-background" required>
+                
+                <label id ="pgb" for="professional-background">Professional Background:</label>
+                <input type="text" id="professional-background" name="professional-background" required>
+
+                <label id="ab" for="academic-background">Academic Background:</label>
+                <input type="text" id="academic-background" name="academic-background" required>
+
+                <label id="sb"for="sub-background">Background in this Subject:</label>
+                <input type="text" id="sub-background" name="sub-background" required>
+
+                <label id="plt" for="platform">Primary Computer Platform:</label>
+                <input type="text" id="platform" name="platform" required>
+
+                <label id="crs" for="courses">Courses:</label>
+                <div id="courseText"></div>
+                <button type="button" onclick="addCourse()">Add Course</button>
+
+                <label id="if"for="interesting">Something Interesting About Me:</label>
+                <input type="text" id="interesting" name="interesting" required>
+
+                <label class="agree" for="agree"> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+                <input type="checkbox" id="agree" name="agree" value="agree">
+
+                <button type="buttom" onclick=displayBg() id="confirmButton">Confirm</button>
+
+            </div>
+            
+        </form>
+
+
+
+
+
+
+    </main>
+    
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+  </body>
+</html>
