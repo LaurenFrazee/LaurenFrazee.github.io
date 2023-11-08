@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(2, 28, 32);
+}
+main
+{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+h3
+{
+  color: darkgoldenrod;
+}
+p{
+  font-size: 20px;
+}
+
+footer 
+{
+  background-color: cadetblue;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height:10vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.068);
+  color: white;
+  text-align: center;
+}
+footer a{
+  text-decoration: none;
+  color:azure;
+  
+}
+
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(2, 28, 32);
+  padding:10px;
+}
+nav > ul>li a{
+color:darkgoldenrod;
+font-size: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active), .active {
+  background-color: #3a5551;
+  border-radius: 10px;
+  color: azure;
+}
+
+
+.content-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 50px;
+  width: 100%;
+
+  
+
+}
+.left-content{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.right-content{
+  display: flex;
+  margin: auto;
+ 
+
+}
+.profile-img {
+  position: absolute;
+  z-index: -1;
+  background-color:rgba(255, 255, 255, 0);
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px white, 
+  0 6px 100px 0 white;
+}
+.dot {
+  position: inherit;
+  z-index: 1;
+  height: 30vw;
+  width: 30vw;
+  background-color: rgba(0, 0, 0, 0.459);
+  border-radius: 50%;
+}
+.name {
+  position: sticky;
+  z-index: 2;
+  right: 100px;
+  top:-300px;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+}
+.title
+{
+  position: sticky;
+  font-size: 40px;
+  top: -100px;
+}
+.skills-container {
+  display:grid;
+  grid-template-columns: auto auto;
+  color: aliceblue; 
+  width: 10%;
+  min-width: 300px;
+}
+
+.skills-container>div {
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.082);
+  box-shadow: 0 px 8px 0 rgba(196, 221, 221, 0.966);
+  margin: 10px;
+  height: 100px;
+  color:azure;
+  text-align: center;
+  min-width: 150px;
+  border: 2px solid darkgoldenrod;
+}
+
+.skills-container > h3:first-child {
+  grid-column: span 2;
+  text-align: center;
+  padding: 10px;
+}
+.about-photo>img{
+  width: 200px;
+  height: 200px;
+  border-bottom: #3a5551;
+}
+
+
+@media (max-width: 900px) {
+
+  .profile-img {
+    position: absolute;
+    top: 1px;
+    width: 50px;
+  }
+  .dot {
+    display: none;
+  }
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.about-para{
+  padding-left:20px;
+  color: azure;
+  line-height: 2;
+  
+  
+}
+.webinar-container{
+  width: fit-content;
+  display:grid;
+  margin: auto;
+  grid-template-columns: auto auto auto auto ;
+  
+  
+}
+.webinar-container> div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  width:300px;
+  height: 180px;
+  min-width: 150px;
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.webinar-container> div a{
+  text-decoration: none;
+  color:azure;
+  font-weight: bold;
+  font-size: large;
+}

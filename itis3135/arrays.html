@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Lauren Frazee's Lucid Fox || ITIS 3135 HOMEPAGE</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body  onload="document.getElementById('name').focus();">
+        <header>
+            <div class="nav-bars">
+            <div data-include="components/header.html"></div>
+            <div data-include="components/secondary-nav.html"></div>
+            </div>
+            <h1>Arrays</h1>
+        </header>
+        <main >
+
+           <div class="array-page-container">
+
+            <div class="array-page-item1">
+                <div class="employee-dropdown">Employees
+                    <div class="employee-dropdown-data">
+                        <ul class="employee-list" >
+                            <li>Mark Cohen</li>
+                            <li>Roger Davis</li>
+                            <li>Mimi Marquez</li>
+                            <li>Benny Coffin III</li>
+                            <li>Maureen Johnson</li>
+                            <li>Joanne Jefferson</li>
+                            <li>Tom Collins</li>
+                            <li>Angel Schunard</li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="array-page-item2">
+                <div id="employee-data"> sdfsdfsdfsdf</div>
+            </div>
+
+            <div class="array-page-item3">
+                <button onclick="displayResults()">Display Results</button> 
+                <div id="results"></div>
+            </div>
+
+            <div class="array-page-item4">
+                <form onsubmit="event.preventDefault(); addSalary(document.getElementById('name').value, document.getElementById('salary').value);">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required oninvalid="this.setCustomValidity('Name is required')" oninput="this.setCustomValidity('')">
+                    <label for="salary">Salary:</label>
+                    <input type="number" id="salary" name="salary" required oninvalid="this.setCustomValidity('Salary is required and must be a number')" oninput="this.setCustomValidity('')">
+                    <input type="submit" value="Submit">
+                </form>
+                
+            </div>
+            <div class="array-page-item5">
+                <button onclick="displaySalary()">Display Results</button> 
+                <div id="results_table">resultsdiv</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+        </main>
+   
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/arrays.js"></script>
+    </body>
+</html>

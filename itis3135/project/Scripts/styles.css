@@ -1,0 +1,252 @@
+* {
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 110px;
+    margin: 0px;
+    color: azure;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  h3{
+    font-size: 34px;
+    margin: 0;
+    color: darkgoldenrod;
+  }
+  p{
+    font-size: 22px;
+    color: azure;
+  }
+  
+  body {
+    background-color: rgb(2, 28, 32);
+  }
+  
+  header {
+    background-color: #031922;
+  }
+  
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(241, 241, 241, 0);
+    padding:10px;
+  }
+  nav > ul>li a{
+  color:darkgoldenrod;
+  font-size: 20px;
+  }
+  
+  main {
+    margin-top: 50px;
+  }
+  
+  footer {
+    background-color: cadetblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height:10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.068);
+    color: white;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active), .active {
+    background-color: #3a5551;
+    border-radius: 10px;
+    color: azure;
+  }
+  
+  img {
+    background-color:rgba(255, 255, 255, 0);
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px white, 
+    0 6px 100px 0 white;
+  }
+  
+  .dot {
+    position: absolute;
+    left: px;
+    top:0px;
+    height: 30vw;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 50%;
+  }
+  
+  .intro {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(0, 0, 0, 0.205);
+   
+  }
+  
+  .about-me {
+    position: absolute;
+    z-index: 1;
+    top:400px;
+    left: 350px;
+    
+  }
+  .hello{
+    position: absolute;
+    z-index:-1;
+    top: 200px;
+    left: 100px;
+    font: 36px;
+  }
+  
+  .name {
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .skills-container {
+    position: absolute;
+    z-index: 1;
+    top:240px;
+    right:200px;
+    display:grid;
+    grid-template-columns: auto auto;
+    color: aliceblue; 
+    width: 25%;
+    min-width: 300px;
+  }
+  
+  .skills-container>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.082);
+    box-shadow: 0 px 8px 0 rgba(196, 221, 221, 0.966);
+    margin: 10px;
+    height: 100px;
+    color:azure;
+    text-align: center;
+    min-width: 150px;
+    border: 2px solid darkgoldenrod;
+  }
+  .skills-container > h3:first-child {
+    grid-column: span 2;
+    text-align: center;
+    padding: 10px;
+  }
+  button {
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid white;
+    color: azure;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    font-weight: bold;
+    border: 3px solid white;
+  }
+  
+  #about-me {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top:525px;
+    left: 475px;
+  }
+  
+  .photo {
+    position: absolute;
+    top:100px;
+    left:50px;
+    width:1em;
+  }
+  
+  @media (max-width: 1200px) {
+    .about-me {
+        top:150px;
+        min-width: 400px;
+        left: 100px;
+    }
+  
+    .name {
+        font-size: 3em; 
+    }
+  
+    .skills-container {
+        top:35vh;
+        left: 20vw;
+    }
+  
+    .photo {
+        top: 90px;
+        width:2px
+    }
+  
+    body {
+        padding:20px;
+    }
+  }
+  .about-me-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    align-self:fle;
+    color: azure;
+    text-align: left;
+  }
+  .about-me-header>div>p{
+    line-height: 2;
+  
+  }
+  .david{
+    font-size: 190px;
+    position: fixed;
+    top:110px;
+    left:230px;
+  }
+  .hello-font{
+    font-size: 95px;
+    position: fixed;
+    top:50px;
+    left:px;
+    letter-spacing: 6px;
+  }
+  .about-photo>img{
+    width: 200px;
+    height: 200px;
+  }
+  .content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    border: 20px solid;
+    background-color: aquamarine;
+  }

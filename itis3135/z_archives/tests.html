@@ -13,6 +13,7 @@
         <div data-include="components/header.html"></div>
         <div data-include="components/secondary-nav.html"></div>
         </div>
+        <h1>Build Your Own Webpage</h1>
     </header>
     <main>
         <form>
@@ -41,6 +42,7 @@
                 <label id="bg" for="personal-background">Personal Background:</label>
                 <input type="text" id="personal-background" name="personal-background" required>
                 
+                
                 <label id ="pgb" for="professional-background">Professional Background:</label>
                 <input type="text" id="professional-background" name="professional-background" required>
 
@@ -63,7 +65,8 @@
                 <label class="agree" for="agree"> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
                 <input type="checkbox" id="agree" name="agree" value="agree">
 
-                <button type="buttom" onclick=displayBg() id="confirmButton">Confirm</button>
+                
+                <button onclick="validateAndDisplay()">Submit</button>
 
             </div>
             
