@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hobby site</title>
+    
+    <style>
+        :root{
+            --light-sage:rgb(226, 238, 221);
+            --not-white:rgb(241, 248, 241);
+            --pale:#F1F2EB;
+            --pale2:#D8DAD3;
+            --light-green:#A4C2A5;
+            --olive-green:#A4C2A5;
+            --not-black:#040403;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            padding:5px;
+            width: 100vw;
+            height:100%;
+            background-color: #040403;
+            color: var(--not-white);
+            background-color: aqua;
+         
+          
+        }
+       
+        a{ font: 16px;}
+        nav{
+            position: fixed;
+            top:0;
+            width: 100%;
+            height:40px;
+            padding:10px;
+            background-color: #040403;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+        }
+        .flex-column{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #040403;
+        }
+        #home,#where,#when,#how,why{
+            margin:auto;
+            height:100vh;
+            align-items: center;
+            justify-content: center;
+            background:var(--not-black);
+            padding:20px;
+            
+        }
+        .extra-large-text{  
+            font-size: 6rem;
+            color:#a8c686bd;
+            
+        }
+        #home> *{
+            line-height: 2;
+            color: var(--light-green);
+            font-size: 4rem;
+        }
+        li {
+            float: right;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        li a 
+        {
+            display: block;
+            color: white;
+            text-align: center;
+            padding:10px;
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+        nav>ul{
+           padding-right:50px ;
+           list-style: none;
+        }
+
+    li a:hover {
+    background-color: #c9c9c9;
+    color: var(--not-black);
+    }
+
+    section p{
+        align-items: center;
+        width: 80%;
+        font-size: 26px;
+        line-height: 2;
+        color: var(--light-green);
+        margin-left: 50px;
+
+    }
+    section{
+        height: 100vh;
+        padding:100px;
+        background-color: #A4C2A5;
+    }
+  
+    #about-me-image img{ 
+        width: 250px;
+         background-color: black; 
+         border-radius: 20%; 
+         box-shadow: -10px 10px 60px #aaaaaa,0px 10px 60px #aaaaaa;
+        }
+
+    #about-me-image{width: fit-content;}
+    
+
+   figcaption{
+     margin: auto;
+     text-align: center;
+     color:goldenrod;
+     font-size: larger;
+   }
+   .flex-row figure{
+    margin:20px auto 10px auto;
+    align-items: center;
+    justify-content: center;
+   } 
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--nav-->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#when">When</a></li>
+                <li><a href="#where">How</a></li>
+                <li><a href="#why">Why</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main>
+        <section id="home" class="flex-column">
+            <h3>Lauren Frazee</span></h3>
+            <h2>Hobby: Being A Struggling Artist</h2>
+        </section>
+        <!--about-->
+        <section id="about" class="flex-row">
+            <div class="flex-column">
+                <h2>About Me</h2>
+                <p>
+                    I'm a DIY lover who enjoys
+                    creating things from scratch. I like to paint, build, and craft anything that I think I can make. 
+                    I started doing DIY during the pandemic when Home Depot was my only escape. DIY has also been a great
+                    way to save money, well, maybe not if you count the tools that I have or will buy. On this website, I 
+                    show you my DIY projects, suggestions, and instructions on how to DIY your way to...debt..creativy. 
+                    I hope you find some inspiration and join me in this creative journey!
+                </p>
+            </div>
+            
+            <div class="flex-row">
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+            </div>
+
+        </section>
+        <!--When-->
+        <section id="when" class="flex-row">
+            <div class="flex-column">
+            <h2>When do I DIY</h2>
+            <p>
+            My DIY hobby is something that I enjoy doing whenever I have some free time. 
+            Depending on the project, it can take me anywhere from a few hours to a few days to complete it.
+            I like to plan ahead, gather the materials, and follow the instructions carefully. Sometimes I encounter challenges or make mistakes,
+            but I always learn from them and improve my skills. I feel proud and satisfied when I finish a DIY project and see the result of my hard work.
+           </p><br>
+           <p>
+            The best time to do my hobbies is during the summer, when school is out and I have more time and energy. I prefer to do my DIY projects in the early morning,
+             when it is not too hot and the sun is bright. I set up my workspace in the backyard, 
+            where I can enjoy the fresh air and the nature. I find it relaxing and fun to work on my hobbies in the morning, 
+            and t hen I have the rest of the day to do other things or relax.
+           </p> 
+            
+           
+           <div class="flex-row">
+            <figure id="about-me-image">
+                <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                <figcaption id="about-me-figcaption">Selfie</figcaption>
+            </figure>
+            <figure id="about-me-image">
+                <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                <figcaption id="about-me-figcaption">Selfie</figcaption>
+            </figure>
+            <figure id="about-me-image">
+                <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                <figcaption id="about-me-figcaption">Selfie</figcaption>
+            </figure>
+           </div>
+            </div>
+        </section>
+
+        <section id="where" class="flex-row">
+            <div class="flex-column">
+                <h2>Where</h2>
+                <p>
+                    Being a struggling Artistic/chronic DIYer is messy, however, I love to create things with my own hands.
+                    I started doing it in the garage, but I soon realized that it was not the best place for it. The sawdust was everywhere,
+                    which may me feel anxious to clean up. I decided to move to the backyard, where I had more space and fresh air.
+                </p>
+                <br>
+                <p>
+                    However, I did not know that the sawdust could have a negative impact on the grass.
+                    I learned, the hard way, that it can deplete the nitrogen in the soil.There was a semicircle of dead grass where I was using my table saw.
+                    I am still trying to fix that problem; that's an on going project for another day. Now, i work patio, where I can work without harming the grass.
+                    I Should invest in some sort of dust catcher $$.
+                </p>
+            </div>
+            
+            <div class="flex-row">
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+            </div>
+            </div>
+
+        </section>
+
+        <section id="how" class="flex-row">
+            <div class="flex-column">
+                <h2>How</h2>
+                <p>
+                Whenever I’m in a creative mood, it’s often sparked by scrolling through Pinterest. I’ll stumble upon an item that I can’t locate in any store, 
+                and then I’ll set out to figure out how to create it myself. At other times, I turn to YouTube for instructional videos. My first significant 
+                DIY project was a 2x4 sectional, which I completed by following plans from Ana-White.com. It didn’t turn out perfectly, but it’s still standing, a testament to my effort.
+                </p>
+                <br>
+                <p>
+                    Overall, i was shocked at how i just needed some basic tool, and a miter saw to complete it. YUP! It all started with a miter saw! These are my must have tools:
+                </p>
+            </div>
+            <div class="flex-row">
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <section id="why" class="flex-row">
+            <div class="flex-column">
+                <h2>Why</h2>
+                <p>
+                    DIYing combines three of my favorite things: creativity, problem-solving, and cost-saving.
+                    I find it incredibly satisfying when I have all my tools, supplies, and a great playlist at hand.
+                    I can lose myself for hours in a project, oblivious to the world around me. 
+                    Of course, not everything always goes according to plan. I’ve had my fair share of failed projects,
+                    but each one has taught me something new. Now, I jokingly say that I know a hundred ways not to cut wood.
+                    My pragmatic approach to everything is to remind myself that in 2023, there’s almost always a blueprint available
+                    for whatever I want to create. It’s all about learning, adapting, and enjoying the journey.  
+            </p>
+
+            </div>
+           
+
+            <div class="flex-row">
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+                <figure id="about-me-image">
+                    <img src="images/laurenf.png" alt="selfie of lauren frazee">
+                    <figcaption id="about-me-figcaption">Selfie</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <!--footer-->
+    <footer>
+        <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="Valid HTML!"></a>
+            <a id="validation_link_html" href="https://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Valid CSS!"></a>
+    </footer>
+</body>
+</html>

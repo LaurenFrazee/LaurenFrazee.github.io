@@ -8,7 +8,7 @@ body {
 }
 main
 {
-  margin-top: 10px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 h3
@@ -69,7 +69,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active), .active {
+li a:hover {
   background-color: #3a5551;
   border-radius: 10px;
   color: azure;
@@ -203,7 +203,7 @@ li a:hover:not(.active), .active {
   justify-content: center;
   text-align: center;
   border-radius: 10px;
-  border: 2px solid aqua;
+  border: 2px solid darkgoldenrod;
   width:300px;
   height: 180px;
   min-width: 150px;
@@ -217,4 +217,14 @@ li a:hover:not(.active), .active {
   color:azure;
   font-weight: bold;
   font-size: large;
+}
+.webinar-container> div:hover {
+  border: 2px solid azure;
+ 
+}
+.webinar-container> div:hover>a {
+  color: darkgoldenrod;
+}
+footer  a:hover{
+  color:aqua;
 }
