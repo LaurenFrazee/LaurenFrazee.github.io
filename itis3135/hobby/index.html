@@ -38,6 +38,11 @@
             padding:5px;
             background-color: #040403;
         }
+   
+        .active {
+         background-color:rgb(192, 237, 192);
+         color: var(--not-black);
+        }
         main{
             width: 100vw;
             height: 100vh;
@@ -61,6 +66,7 @@
             text-align: center;
             font-size: 20px;
             color: var(--light-sage);
+            height: fit-content;
         }
         footer a{
             color: #A4C2A5;
@@ -68,11 +74,13 @@
         }
         #home,#where,#when,#how,#why,#about{
             margin:auto;
+            padding-bottom: 100px;
             background:var(--not-white);
-            height: 100vh;
+            height: fit-content;
             padding-top: 100px;
             padding-left: 100px;
             padding-right: 100px;
+            
         
     
         }
@@ -111,27 +119,27 @@
         }
 
     li a:hover {
-    background-color: #c9c9c9;
-    color: var(--not-black);
+    
+    border-bottom: 2px solid var(--light-green);
+   
     }
 
     section p{
         font-size: 20px;
         line-height: 2;
         min-width: 300px;
-        width: 90%;
+        width: 70%;
         color: var(--not-black);
     
     }
+ 
     section h2{
         padding-bottom:20px;
         color: var(--not-black);
     }
-  
+
 
     #about  img{ 
-        
-        width:%;
          background-color: black; 
          box-shadow: -10px 10px 60px #aaaaaa,0px 10px 60px #aaaaaa;
         }
@@ -139,7 +147,7 @@
         
         width: 100%;
          background-color: black; 
-         box-shadow: -10px 10px 60px #aaaaaa,0px 10px 60px #aaaaaa;
+         box-shadow: -10px 10px 20px #666666,0px 10px 60px #f3f7f3;
         }
 
     .flex-row .gallary{
@@ -158,22 +166,23 @@
    }
    figure{
    
-    margin: 5px;
+    margin: 50px;
     align-items: center;
     justify-content: center;
-
-
    } 
+   .content-section {
+  display: none;
+}
     </style>
 </head>
 <body>
     <!--header-->
     <header>
         <!--nav-->
-        <nav>
+        <nav id="hobbyNav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#when">When</a></li>
                 <li><a href="#where">Where</a></li>
                 <li><a href="#how">How</a></li>
@@ -184,12 +193,15 @@
 
     <!--main-->
     <main>
-        <section id="home" class="flex-column">
+        <div id="main-content">
+
+        </div>
+        <section id="home" class=" flex-column">
             <h3>Lauren Frazee</h3>
             <h2>Hobby: Being A Struggling Artist</h2>
         </section>
         <!--about-->
-        <section id="about" class="flex-row">
+        <section id="about" class="content-section flex-row">
             <div class="flex-column">
                 <h2>About Me</h2>
                 <p>
@@ -203,7 +215,7 @@
             </div>
             
             <div class="flex-row">
-                <figure class="about-me-image">
+                <figure class="pro-image">
                     <img src="images/laurenf.png" alt="selfie of lauren frazee">
                     <figcaption class="about-me-figcaption">Selfie</figcaption>
                 </figure>
@@ -211,7 +223,7 @@
 
         </section>
         <!--When-->
-        <section id="when" class="flex-row">
+        <section id="when" class="content-section flex-row">
             <div class="flex-column">
             <h2>When do I DIY</h2>
             <p>
@@ -241,7 +253,7 @@
            </div>
         </section>
 
-        <section id="where" class="flex-row">
+        <section id="where" class="content-section flex-row">
             <div class="flex-column">
                 <h2>Where</h2>
                 <p>
@@ -254,7 +266,7 @@
                     However, I did not know that the sawdust could have a negative impact on the grass.
                     I learned, the hard way, that it can deplete the nitrogen in the soil.There was a semicircle of dead grass where I was using my table saw.
                     I am still trying to fix that problem; that's an on going project for another day. Now, i work patio, where I can work without harming the grass.
-                    I Should invest in some sort of dust catcher $$.
+                    I Should invest in some sort of dust catcher.
                 </p>
             </div>
             
@@ -273,7 +285,7 @@
 
         </section>
 
-        <section id="how" class="flex-row">
+        <section id="how" class="content-section flex-row">
             <div class="flex-column">
                 <h2>How</h2>
                 <p>
@@ -301,7 +313,7 @@
 
         </section>
 
-        <section id="why" class="flex-row">
+        <section id="why" class="content-section flex-row">
             <div class="flex-column">
                 <h2>Why</h2>
                 <p>
@@ -318,7 +330,7 @@
             </div>
            
 
-            <div class="flex-row">
+            <div class=" flex-row">
                 <figure class="about-me-image">
                     <img src="images/wallArt.jpg" alt="living room">
                     <figcaption class="about-me-figcaption">Extra Largae canvas art DIY</figcaption>
@@ -342,9 +354,10 @@
     <footer>
         <p>Designed by <a href="../frazeedesigns/frazeeltd.html">FrazeeLTD&copy </a> </p>
         <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
-            <img style="border:0;width:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="Valid HTML!"></a>
+            <img style="border:0;width:20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="Valid HTML!"></a>
             <a id="validation_link_html" href="https://jigsaw.w3.org/css-validator/check/referer">
-              <img style="border:0;height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Valid CSS!"></a>
+              <img style="border:0;height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Valid CSS!"></a>
     </footer>
+    <script src="scripts/hobbyscript.js"></script>
 </body>
 </html>

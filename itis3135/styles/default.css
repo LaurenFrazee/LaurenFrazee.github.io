@@ -57,7 +57,7 @@ body {
   background-image:
     linear-gradient(to right, rgb(7, 14, 16), rgb(2, 17, 20), rgba(0, 60, 77, 0.897));
   text-align: center;
-  width: 100vw;
+  width: inherit;
   margin: 0;
   padding: 0;
   height:100vh;
@@ -83,6 +83,7 @@ main {
 /*Nav*********************************************************/
 nav {
   display: flex;
+  flex-wrap: wrap;
   min-height: 30px;
   margin: auto;
   color: var(--teal);
@@ -91,10 +92,16 @@ nav {
   padding: 2px;
 }
 
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
 .secondary-nav {
   margin-top: 5px;
   margin-bottom: 6vh;
   background-color: rgba(240, 248, 255, 0.062);
+  width: inherit;
 }
 
 ul {
@@ -139,7 +146,7 @@ figure {
   margin-top: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.903), 0 6px 20px 0 rgb(0, 0, 0);
   width: 40vh;
-  height: fit-content;
+  height: auto;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -147,20 +154,21 @@ figure {
 .intro-picture {
   background: var(--whitish_blue);
   margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: inherit;
+  padding-right: inherit;
   padding-top: 10px;
 }
 
 figure img {
   width: 40vh;
   height: auto;
+  
 }
 
 figcaption {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 70%;
   padding-top: 1em;
   color: #01242b;
 }
@@ -182,15 +190,16 @@ figcaption {
   text-align: left;
   padding: 15px;
   margin: 10px;
-  width: 33vw;
+  width: inherit;
   border-radius: 5px;
 }
 
 .info, #info{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: inherit;
+  padding: 50px;
+
 }
 
 /*quick format***********************************************/
@@ -335,6 +344,19 @@ option {
   text-align: left;
   margin-bottom: 2em;
 }
+@media screen and (max-width: 800px) {
+  
+  .info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding: initial;
+  }
+  .outer_card{
+    width: inherit;
+    height: inherit;
+  }
+}
 
 /***contrac******************************************/
 .contract {
@@ -450,7 +472,7 @@ span {
   grid-column-end: 4;
 }
 #numbers{
-  color: aqua;
+
   display: grid;
   grid-row-start: 2;
   grid-template-columns: auto auto auto;
@@ -461,7 +483,7 @@ span {
   background-color: #dee6e6;
   height: 15vh;
   text-align: right;
-  color: #01242b;
+  
 
 }
 .employee-dropdown{
@@ -486,34 +508,25 @@ span {
   cursor: pointer;
 }
 
-.array-page-container {
-  display: grid;
- 
-  justify-content: center;
-
-}
-
 .array-page-item1{
-  
-  
-  width: 100%;
-  background-color: bisque;
+  float: left;
+  position: absolute;
+  top:300px;
+
 
   
 }
-.array-page-item2{
-background-color: aqua;
 
-  
- 
+ @media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  .info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+  .outer_card{
+    width:90vw;
+  }
 }
-.array-page-item3{
- background: #5faca5;grid-column-start:4 ;grid-column-end: 6 ;
-}
-.array-page-item4{
-  background:pink;grid-column-start:4 ;grid-column-end: 6 ;
- }
-
- .array-page-item5{
-  background:rgb(96, 17, 17);grid-column-start:4 ;grid-column-end: 6 ;
- }
