@@ -530,3 +530,11 @@ span {
     width:90vw;
   }
 }
+.project{
+  color: rgb(245, 184, 32);
+}
+
+.noListStyle ul{
+  list-style:none ; 
+  line-height: 1;
+}
