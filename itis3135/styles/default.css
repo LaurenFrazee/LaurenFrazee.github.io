@@ -538,3 +538,20 @@ span {
   list-style:none ; 
   line-height: 1;
 }
+
+/*gallery*/
+.slides { display: none; }
+.active { display: block; }
+
+.text{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--teal);
+  font-size:2rem;
+}
+.prev,.next{
+  font-size: 2rem;
+}
+.nameList{
+  margin: auto;
+  text-align: left;
+}

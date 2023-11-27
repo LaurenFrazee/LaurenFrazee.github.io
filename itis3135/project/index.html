@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Scripts/defaultStyles.css">
-    <style>
-
-        
-    </style>
+    <link rel="stylesheet" href="styles/defaultStyles.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="webinars.html">Webinars</a></li>
-            <li><a href="aboutMe.html">About Me</a></li>
-          </ul>
-    </nav>
-   
+    
+    <header>
+            <div data-include="components/header.html"></div>
+    </header>
+
     <main>
-        <div class="content-wrapper">
+        <div class="content-wrapper home">
             <div class="left-content">
-                <div>
-                    <img class="profile-img" src="images/profile.png" >
-                    <div class="dot"></div>
+                <div class="id">
+                    <h1 class="name">David Frazee</h1>
+                    <h3 class="title">Product Manager</h3>   
                 </div>
                     
                 <div>
-                    <h1 class="name">David Frazee</h1>
-                    <h3 class="title">Product Manager</h3>
+                    <div class="introduction">
+                        <p>
+                            <span class="indent"></span>As a Product Manager for Azure Network Security at Microsoft,
+                            I leverage my technical and customer-facing skills to deliver innovative solutions
+                            for enterprise cloud networking. I have over five years of experience in Azure IaaS a
+                            nd PaaS technologies, with a specialized focus on Azure Networking services.
+                        </p>
+                        <a href="/aboutMe.html"><button class="read-more">Read More</button></a>
+
+                        <h3>My Skills</h3>
+                        <div class="skills-container">
+                            
+                            <div class="skill1"><h4>Critical Thinking</h4></div>
+                            <div class="skill2"><h4>Highly Adaptive</h4></div>
+                            <div class="skill3"><h4>Strong Communication</h4></div>
+                            <div class="skill4"><h4>Cloud Computing</h4></div>
+                        </div>
                 </div>
                 
             </div><!--end lc-->
         
-            <div class="right-content">
-                <div class="skills-container">
-                    <h3>My Skills</h3>
-                    <div class="skill1"><h4>Critical Thinking</h4></div>
-                    <div class="skill2"><h4>Highly Adaptive</h4></div>
-                    <div class="skill3"><h4>Strong Communication</h4></div>
-                    <div class="skill4"><h4>Cloud Computing</h4></div>
-                </div>
-            </div><!--end rc-->
+          
 
         </div><!--end cw-->
-
+        <div class="line"></div>
+       
     </main>
+    
+    
     <footer>
-         <div><a href="https://www.linkedin.com/in/davidfrazee/">LinkedIn</a></div>
+        <div data-include="components/footer.html"></div>
     </footer>
 
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+    <script src="scripts/project.js"></script>
 </body>
+
 </html>

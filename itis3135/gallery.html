@@ -13,91 +13,111 @@
             <div data-include="components/secondary-nav.html"></div>
             </div>
             <h1>Slideshow Gallery</h1>
-            <div class="gallery-container">
-                <div class="slides">
-                    <div class="number"></div>
-                    <img src="images/namegallery/l.jpg" alt="level">
+            
 
-                    <div class="slides">
-                        <div class="number">1/12</div>
-                        <img src="images/namegallery/a.jpg" alt="akg headphones">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">2/12</div>
-                        <img src="images/namegallery/u.jpg" alt="usb-c connector">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">3/12</div>
-                        <img src="images/namegallery/r2.jpg" alt="remote">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">4/12</div>
-                        <img src="images/namegallery/e.jpg" alt="electric keypad">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">5/12<div>
-                        <img src="images/namegallery/n.jpg" alt="notes">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">6/12</div>
-                        <img src="images/namegallery/f.jpg" alt="fugeTeck brand remote">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">8/12</div>
-                        <img src="images/namegallery/r.jpg" alt="red pen">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">9/12</div>
-                        <img src="images/namegallery/a 2.jpg" alt="allen key">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">10/12</div>
-                        <img src="images/namegallery/z.jpg" alt="zipper foot for sewing machine">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">11/12</div>
-                        <img src="images/namegallery/e2.jpg" alt="electric drumkit">
-                    </div>
-
-                    <div class="slides">
-                        <div class="number">12/12</div>
-                        <img src="images/namegallery/e3.jpg" alt="erasers for mechanical pencil">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="caption-container">
-                <p id="caption"></p>
-              </div>
-
-              <div class="row">
-                <div class="column">
-                    <img src="images/namegallery/l.jpg" alt="level" class="image-preview" onclick="currentSlide(1)">
-                </div>
-
-
-
-
-
-                
-              </div>
         </header>
         <main>
        
-       
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/namegallery/l.jpg" >
+      <div class="text">L - Level</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/namegallery/2.jpg"  >
+      <div class="text">A - AKG'S</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/namegallery/u.jpg"  >
+      <div class="text"> U - USB-C</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 12</div>
+        <img src="images/namegallery/r.jpg"  >
+        <div class="text">R - Red Pen</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 12</div>
+        <img src="images/namegallery/e.jpg"  >
+        <div class="text">E - Electronic Keypad </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 12</div>
+        <img src="images/namegallery/n.jpg"  >
+        <div class="text">N - Note</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 12</div>
+        <img src="images/namegallery/f.jpg"  >
+        <div class="text">F- FugTek Remote</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 12</div>
+        <img src="images/namegallery/r2.jpg"  >
+        <div class="text">R - Remote</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"> 9 / 12</div>
+        <img src="images/namegallery/a 2.jpg"  >
+        <div class="text">A - Allen Key</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10/ 12</div>
+        <img src="images/namegallery/z.jpg"  >
+        <div class="text">Z - Zipper Foot</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 /12</div>
+        <img src="images/namegallery/e2.jpg"  >
+        <div class="text">E - Electronic DrumKit</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 12</div>
+        <img src="images/namegallery/e3.jpg"  >
+        <div class="text">E - Eraser</div>
+      </div>
+
+      
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+
+
+    <ul class="nameList">
+      <li><a href="images/namegallery/l.jpg">L - Level</a></li>
+      <li><a href="images/namegallery/2.jpg">A - AKG'S</a></li>
+      <li><a href="images/namegallery/u.jpg">U - USB-C</a></li>
+      <li><a href="images/namegallery/r.jpg">R - Red Pen</a></li>
+      <li><a href="images/namegallery/e.jpg">E - Electronic Keypad</a></li>
+      <li><a href="images/namegallery/n.jpg">N - Note</a></li>
+      <li><a href="images/namegallery/f.jpg">F - FugTek Remote</a></li>
+      <li><a href="images/namegallery/r2.jpg">R - Remote</a></li>
+      <li><a href="images/namegallery/a 2.jpg">A - Allen Key</a></li>
+      <li><a href="images/namegallery/z.jpg">Z - Zipper Foot</a></li>
+      <li><a href="images/namegallery/e2.jpg">E - Electronic DrumKit</a></li>
+      <li><a href="images/namegallery/e3.jpg">E - Eraser</a></li>
+    </ul>
+    
+  
         </main>
    
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/gallery.js"></script>
     </body>
 </html>
