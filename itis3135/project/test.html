@@ -1,64 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/defaultStyles.css">
-</head>
-
+<html>
 <body>
-    
-    <header>
-            <div data-include="components/header.html"></div>
-    </header>
 
-    <main>
-        <div class="layout grid">
+<h2>The XMLHttpRequest Object</h2>
 
-            <div class="one">
-                <div>
-                    one
-             
-                </div>
-               
-            </div>
+<div id="demo">
+<p>Let AJAX change this text.</p>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
 
-            <div class="two">
-                two
-            </div>
+<script>
+document.addEventListener('mouseover', function(e) {
+    var clickedElementId = e.target.id;
+    console.log(clickedElementId);
+});
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    var parser = new DOMParser();
+        var htmlDoc = parser.parseFromString(this.responseText, 'text/html');
+        var h3Content = htmlDoc.querySelector('h3').innerText;
+        alert(h3Content);
 
-            <div class="three">
-                three
-            </div>
+    document.getElementById("demo").innerHTML = h3Content;
+  }
+  xhttp.open("GET", "/blogintro/introductions.html");
+  xhttp.send();
+}
 
-            <div class="four">
-                four
-            </div>
-
-            <div class="five">
-                five
-            </div>
-
-            <div class="six">
-                six
-            </div>
-            <div class="seven">
-               
-            </div>
+</script>
+<script src="scripts/HTMLInclude.min.js"></script>
 
 
-        </div>
-       
-    </main>
-    
-    
-    <footer>
-        lkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkj
-        <div data-include="components/footer.html"></div>
-    </footer>
-
-    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
-
 </html>

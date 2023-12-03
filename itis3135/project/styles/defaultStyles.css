@@ -1,3 +1,9 @@
+:root{
+  --small-margin: 5px;
+  --medium-margin: 10px;
+  --large-margin:20px;
+
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +16,7 @@ body {
   background-image: url('../images/profile.png'), linear-gradient(to right, rgb(7, 14, 16), rgb(2, 17, 20), rgba(0, 60, 77, 0.898));
   background-repeat:no-repeat;
   background-position : 0px 50px;
- background-color: rgb(0, 10, 12);
+  background-color: rgb(1, 14, 16);
 }
 
 main
@@ -29,7 +35,7 @@ p{
 
 footer 
 {
-  background-color: rgb(2, 28, 32);;
+  background-color: rgb(1, 14, 16);
   position: fixed;
   left: 0;
   bottom: 0;
@@ -62,17 +68,16 @@ footer a:hover{
   font-size: 40px;
   font-weight: bolder;
   padding: 10px;
-  border: px solid rgb(245, 233, 203);
+  border: 1px solid rgb(245, 233, 203);
 }
 nav {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1000;
   width: 100vw;
-  background-color: rgb(2, 28, 32);
-  padding:px;
-
-
+  background-color: rgb(1, 14, 16);
+  padding:2px;
 }
 nav > ul>li a{
 color:rgb(250, 199, 71);
@@ -98,10 +103,11 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li a:hover{
   background-color: #3a5551;
   border-radius: 10px;
-  color: azure;
+  color: #2a3d3b;
+  background-color: rgba(240, 248, 255, 0.781);
 }
 
 
@@ -230,15 +236,14 @@ top: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.082);
-  box-shadow: 0 px 8px 0 rgba(196, 221, 221, 0.966);
+  /*box-shadow: 0 1px 0px 1px rgba(196, 221, 221, 0.966);*/
   margin: 10px;
   height: 100px;
   color:azure;
   text-align: center;
   min-width: 200px;
   border: 2px solid rgba(207, 207, 207, 0);
-  background-color: rgba(165, 165, 165, 0.075);
+  background-color: rgba(165, 165, 165, 0.175);
  
 }
 
@@ -297,10 +302,11 @@ top: 250px;
 }
 a{
   margin: auto;
+  text-decoration: none;
 }
 
 
-.read-more:hover{
+.read-more:hover, #intro-pop button{
   border: 1px solid rgb(255, 255, 255);
   color:rgb(255, 213, 108);
   cursor:pointer;
@@ -312,22 +318,24 @@ a{
   width: fit-content;
   display:flex;
   flex-wrap: wrap;
-  margin: 50px auto auto auto;
+  margin: auto auto auto auto;
   grid-template-columns: auto auto auto auto ;
+  justify-content: center;
   
   
 }
 .webinar-container> div{
   display: flex;
+  flex-direction: column;
   text-align: center;
   border-radius: 10px;
   border: 2px solid darkgoldenrod;
   width:300px;
   height: 180px;
   min-width: 150px;
-  margin: 10px;
+  margin: 5px;
   padding: 20px;
-  background: black;
+  background-color: rgba(1, 18, 20, 0.859);;
 
 }
 
@@ -337,15 +345,41 @@ a{
   font-weight: bold;
   font-size: large;
 }
-.webinar-container> div:hover {
-  border: 2px solid azure;
- 
+.webinar-container> div:hover  {
+  border-radius: 10px;
+  color: black;
+  background-color: rgba(240, 248, 255, 0.5);
+  border: 2px solid #2a3d3b;
 }
-.webinar-container> div:hover>a {
-  color: darkgoldenrod;
+
+.webinar-container button{
+  display: none;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid rgb(92, 92, 92);
+  font-weight: bold;
+}
+.webinar-container button:hover{
+border: 2px solid white;
+cursor: pointer;
+}
+
+.webinar-container>div a:hover{
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.webinar-container:hover button{
+  color:rgb(255, 255, 255);
+  display: block;
+
 }
 footer  a:hover{
-  color:rgb(0, 255, 255)(0, 255, 255, 0.479);
+  color:rgb(0, 255, 255, 0.479);
 }
 
 /*test*/
@@ -391,4 +425,43 @@ footer  a:hover{
   width: 500px;
   height: 2px;
   box-shadow: 10px 5px 15px 0px rgb(255, 255, 255);
+}
+
+
+
+
+#intro-pop{
+  position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: auto;
+  padding: 50px;
+  background-color: rgba(2, 28, 32, 0.852);
+  border: 2px solid darkgoldenrod;
+  box-shadow: 0px 0 100px 0 rgba(255, 255, 255, 0.56);
+  color: aliceblue;
+  line-height: 2;
+  width: 90vw;
+}
+
+#intro-pop h3, #intro-pop h4, #intro-pop p{
+  margin-bottom: var(--medium-margin);
+  font-size: larger;
+}
+#intro-pop button{
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(92, 92, 92);
+  display: block;
+  margin: auto auto;
+
+}
+.closeButton{
+   position: absolute;
+  top: var(--medium-margin);
+  right: var(--medium-margin);
 }
