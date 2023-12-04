@@ -92,7 +92,7 @@ function displayIntro() {
     
     
    }
-   xhttp.open("GET", "/blogintro/" + buttonid +".html");
+   xhttp.open("GET", "../blogintro/" + buttonid +".html");
    xhttp.send();
 
 
