@@ -31,13 +31,16 @@ function displayIntro() {
   let blog_link = anchor.querySelector('a');
 
   overlay.style.display = "block";
+  
  console.log("this us" + buttonid);
    const xhttp = new XMLHttpRequest();
+   
    xhttp.onload = function() {
      let parser = new DOMParser();
          let htmlDoc = parser.parseFromString(this.responseText, 'text/html');
+           
          let title = htmlDoc.querySelector('h3').textContent;
-        /*alert(title);*/
+
          let introd = htmlDoc.querySelector('h4').textContent;
 
          let paragraph = htmlDoc.querySelector('p').textContent;
@@ -92,7 +95,7 @@ function displayIntro() {
     
     
    }
-   xhttp.open("GET", "../blogintro/" + buttonid +".html");
+   xhttp.open("GET", "/itis3135/project/blogintro/" + buttonid +".html");
    xhttp.send();
 
 

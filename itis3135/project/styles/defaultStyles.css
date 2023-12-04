@@ -21,7 +21,7 @@ body {
 
 main
 {
-height:inherit;
+height:100%;
 margin-top: 50px; 
 background-color: rgba(10, 10, 10, 0.822)
 }
@@ -211,6 +211,7 @@ top: 250px;
   .about-para{
     text-align: left;
     min-width: 450px;
+    width:100%;
   }
 
   .skills-container{
@@ -271,7 +272,7 @@ top: 250px;
   padding:50px;
   color: azure;
   line-height: 2;
-  width:40%
+  width:100%
 }
 
 .introduction{ 
@@ -456,6 +457,7 @@ footer  a:hover{
   border: 1px solid rgb(92, 92, 92);
   display: block;
   margin: auto auto;
+  padding: 10px;
 }
 .closeButton{
    position: absolute;
@@ -532,9 +534,7 @@ background-color: rgb(255, 255, 255);
   margin-bottom: var(--medium-margin);
 }
 
-.calendar-cell {
- 
-}
+
 
 .date-number {
   display: block;
