@@ -1,36 +1,176 @@
-:root{
+:root
+{
   --small-margin: 5px;
   --medium-margin: 10px;
   --large-margin:20px;
-
+  --royalBlue: rgb(0, 120, 225);
+  --background:rgb(1, 14, 16);
+  --whitish-text:  rgba(255, 255, 255, 0.932);
+  --blue-border: 2px solid rgb(0, 120, 225);
+  --grey-color:color: rgb(224, 224, 223);
+  --gold-border: 2px solid white;
+  --container-bg-for-gold: rgba(165, 165, 165, 0.175);
+  --blue-box-shadow: 0 1px 10px 1px royalblue;
 }
-* {
+
+*
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body {
- 
+body
+{
   height: 100vh;
   width: 100vw;
-  background-image: url('../images/profile.png'), linear-gradient(to right, rgb(7, 14, 16), rgb(2, 17, 20), rgba(0, 60, 77, 0.898));
+  background-image: url('../images/profile.png'), linear-gradient(to right, rgb(255, 255, 255), var(--royalBlue), rgb(0, 0, 0));
   background-repeat:no-repeat;
-  background-position : 0px 50px;
   background-color: rgb(1, 14, 16);
 }
-
 main
 {
-height:100%;
-margin-top: 50px; 
-background-color: rgba(10, 10, 10, 0.822)
+height: inherit;
+background-color: rgba(10, 10, 10, 0.822);
+padding: 50px;
+}
+h1{
+  color: aliceblue;
 }
 h3
 {
   color: rgb(0, 120, 225);
 }
-p{
+p
+{
   font-size: 20px;
+}
+
+i
+{
+  margin: var(--medium-margin);
+  position: relative;
+  top: -200px;
+  z-index: 99;
+}
+i:hover
+{
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(1turn); }
+}
+nav
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  background-color: rgb(1, 14, 16);
+  padding:2px;
+}
+.toggle-area{
+  float: right;
+  margin:15px;
+  background-color:grey;
+  height: 25px;
+  width: 50px;
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.453);
+
+}
+.mode-button{
+  position: relative;
+
+  cursor: pointer;
+  background-color: gray;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  border: 2px solid grey;
+  box-shadow: -1px 0 5px rgb(16, 12, 12);
+}
+
+
+nav > ul>li a:hover
+{
+ 
+  background-color: transparent;
+  border-bottom: 2px solid rgb(1, 98, 183);
+  color: goldenrod;
+}
+nav > ul>li a:active{
+  color: var(--royalBlue);
+}
+
+a{
+  margin: auto;
+  text-decoration: none;
+}
+nav > ul>li a
+{
+color: white;
+font-size: 20px;
+border: 2px solid rgba(1, 98, 183, 0);
+}
+ul 
+{
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+li { float: right; }
+
+li a { display: block; text-align: center; padding: 14px 16px; text-decoration: none;}
+
+@media (max-width: 900px) {
+
+  .profile-img {
+   display: none;
+  }
+  .dot {
+    display: none;
+  }
+  nav > ul>li a
+  {
+  font-size: px;
+  }
+  nav > ul{
+    float: right;
+  }
+  nav .logo {
+    padding: 2px;
+    position: fixed;
+    top: 0;
+    left: 2px;
+   
+  }
+
+  .toggle-area{
+    position: absolute;
+    top: 50px;
+   z-index: 1;
+   height: 1em;
+   width: 2.5em;
+
+  }
+  .mode-button{
+    width: 1em;
+    height: 1em;
+    top: -4px;
+  }
+  .content-wrapper{
+  
+    padding: auto;
+    margin: auto;
+  }
+ 
+  
 }
 
 footer 
@@ -46,13 +186,15 @@ footer
   margin:auto;
   padding: 5px;
 }
-footer a{
+footer a
+{
   line-height: 1;
   text-decoration: none;
   color:skyblue;
   padding: 8px;
 }
-footer p{
+footer p
+{
   font-size: 16px;
 }
 
@@ -61,73 +203,34 @@ footer p{
   color: rgba(255, 255, 255, 0.932);
   margin-left: 20px;
   background-color: rgba(167, 167, 167, 0.164);
-  display: inline;
   font-family:'Times New Roman', Times, serif;
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
-  padding: 10px;
+  padding: var(--small-margin);
   border: 1px solid rgb(0, 120, 225);
 }
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100vw;
-  background-color: rgb(1, 14, 16);
-  padding:2px;
-}
-nav > ul>li a{
-color: white;
-font-size: 20px;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  margin-right: 20px;
-}
 
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover{
-  background-color: #3a5551;
-  border-radius: 10px;
-  color: #2a3d3b;
-  background-color: rgba(240, 248, 255, 0.781);
-}
-
-
-.content-wrapper{
+.content-wrapper
+{
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;flex-shrink: inherit;
+  padding: 50px;
+  flex-shrink: inherit;
 }
 
-.left-content{
+.left-content
+{
+  height: fit-content;
   margin: auto;
   display: flex;
   flex-direction: row;
-  
  
 }
-.right-content{
+.right-content
+{
   display: flex;
   margin: auto;
- 
-
 }
 .profile-img {
   position: absolute;
@@ -137,91 +240,31 @@ li a:hover{
   height: auto;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0px 0px 5px 0px white, 
-  0 6px 100px 0 white;
-  margin-top: 5px;
-}
-.dot {
-  position: inherit;
-  background-color: #65706f;
-  z-index: -1;
-  height: 15vw;
-  width: 15vw;
-  border-radius: 50%;
-  box-shadow: 0px 0px 5px 0px rgb(0, 0, 0), 
-  100px 100px 100px 100px rgb(0, 0, 0);
-}
-.name {
-  color: rgb(255, 255, 255);
-  font-size: 100px;
-  
+  box-shadow: 0px 2px 200px 0px rgb(0, 0, 0), 
+  0 0px 100px 0 white;
+  margin-top: 50px;
 }
 
+.greeting{
+position: relative;
+top: 290px;
+}
+.name
+{
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+}
 .title
 {
   font-size: 40px;
   margin-left: 10px;
 }
-.id{
+.id
+{
 position: relative;
-top: 250px;
-}
-.introduction h3{
-  color:rgb(0, 120, 225);
+top: 195px;
 }
 
-.home  h1{
-  color: aliceblue;
-
-
-}
-
-@media (max-width: 900px) {
-  .name {
-   margin-top: 10px;
-  font-size: 2rem;
-  display: inline;
-  }
-  .line{
-    display: none;
-  
-  }
-  main{
-    height: fit-content;
-  }
-  .introduction{
-    position: relative;
-    top: 65px;
-    min-width: 400px;
-   
-  }
-  .title
-  {
-    font-size: 2rem;
-    display: inline;
- 
-  }
-  .id{
-  position: absolute;
-  top: 100px;
-  }
-  nav{
-    z-index: 1;
-  }
-  .about-para{
-    text-align: left;
-    min-width: 450px;
-    width:100%;
-  }
-
-  .skills-container{
-   
-    align-items: center;
-  justify-content: center;
-  width: min-content;
-  }
-
-}
 
 
 .skills-container {
@@ -229,39 +272,24 @@ top: 250px;
   flex-wrap: wrap;
   color: aliceblue; 
   min-width: 300px;
-  
+  margin: auto;
+  justify-content: center;
 }
 
 .skills-container>div {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*box-shadow: 0 1px 0px 1px rgba(196, 221, 221, 0.966);*/
-  margin: 10px;
+  margin: var(--medium-margin);
   height: 100px;
   color:azure;
   text-align: center;
   min-width: 200px;
-  border: 2px solid rgba(207, 207, 207, 0);
-  background-color: rgba(165, 165, 165, 0.175);
- 
+  border: var(--gold-border);
+  background-color: var(--container-bg-for-gold);
+  box-shadow: 0 1px 10px 1px royalblue;
 }
 
-
-@media (max-width: 900px) {
-
-  .profile-img {
-    position: fixed;
-    top: 0px;
-    left: 25px;
-    width: 60px;
-    border-radius: 0px;
-  }
-  .dot {
-    display: none;
-  }
- 
-}
 
 
 .row{
@@ -272,7 +300,8 @@ top: 250px;
   padding:50px;
   color: azure;
   line-height: 2;
-  width:100%
+  width:100%;
+  margin-top: var(--large-margin);
 }
 
 .introduction{ 
@@ -281,9 +310,12 @@ top: 250px;
   color: rgb(224, 224, 223);
   margin: auto;
   padding: 50px;
-  width: 80%;
+  width: 100%;
   line-height: 2;
   border-radius: 100px;
+}
+.introduction h3{
+  font-size: larger;
 }
 .indent{
   margin-left:30px ;
@@ -294,15 +326,10 @@ top: 250px;
   z-index: 2;
   padding: 10px;
   width: fit-content;
-  margin: 0px auto 30px auto;
-  border-radius: 5px;
+  margin: auto;
   background-color: transparent;
   color: aliceblue;
   border: 1px solid rgb(92, 92, 92);
-}
-a{
-  margin: auto;
-  text-decoration: none;
 }
 
 
@@ -312,7 +339,7 @@ a{
   cursor:pointer;
 
 }
-
+/*for webinar and blog containers*/
 .webinar-container{
 
   width: fit-content;
@@ -328,15 +355,15 @@ a{
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-radius: 10px;
-  border: 2px solid rgb(0, 120, 225);
-  width:300px;
-  height: 180px;
+  
+  width:250px;
+  height: 150px;
   min-width: 150px;
-  margin: 5px;
-  padding: 20px;
-  background-color: rgba(1, 18, 20, 0.859);;
-
+  margin: var(--medium-margin);
+  padding: var(--small-margin);
+  border: var(--gold-border);
+  background-color: var(--container-bg-for-gold);
+  box-shadow: 0 1px 10px 1px royalblue;
 }
 
 .webinar-container> div a{
@@ -344,13 +371,9 @@ a{
   color:azure;
   font-weight: bold;
   font-size: large;
+  border: none;
 }
-.webinar-container> div:hover  {
-  border-radius: 10px;
-  color: black;
-  background-color: rgba(240, 248, 255, 0.5);
-  border: 2px solid rgb(0, 120, 225);
-}
+
 
 .webinar-container button{
   display: none;
@@ -365,14 +388,19 @@ a{
 }
 .webinar-container button:hover{
 border: 2px solid rgb(1, 98, 183);
+box-shadow:  0 1px 10px 1px royalblue;
 cursor: pointer;
 }
 
 .webinar-container>div a:hover{
-  color: rgb(0, 0, 0);
+  color: var(--royalBlue);
   background-color: transparent;
+  border: 2px solid rgb(1, 98, 183);
 }
 
+.webinar-container>div a:hover{
+  border: none;
+}
 .webinar-container:hover button{
   color:rgb(255, 255, 255);
   display: block;
@@ -428,7 +456,7 @@ footer  a:hover{
 }
 
 
-
+/*popup for blog*/
 
 #intro-pop{
   position: absolute;
@@ -473,77 +501,291 @@ footer  a:hover{
   right: var(--medium-margin);
 }
 
+/*table and calendar*/
 table {
- 
+  position: relative;
+  display: block;
+  width: fit-content;
+  padding: var(--medium-margin);
   border-collapse: collapse;
-  margin: auto;
-  background-color: rgb(1, 18, 20);
+ background-color:transparent;
   box-shadow: -10px -10px 20px #666666;
   border:2px solid rgb(0, 120, 225); 
-  color:skyblue;
+  color: var(--royalBlue);
+  font-weight: bold;
  
   
 }
 th{
- 
-  width: 200px;
+ background-color: rgba(254, 255, 255, 0.801);
+  width: 100px;
   padding: 5px;
   font-size: larger;
 
+  
+ 
+
 }
  td {
-  padding: 20px;
+ width: 100px;
   text-align: right;
   vertical-align: top;
-  color: aliceblue;
+  color: rgb(252, 252, 252);
+  border: .5px solid rgba(255, 255, 255, 0.247);
 
 
 }
-
-
-.past {
-  color: grey;
-  font-size: large;
-  font-weight: bold;
+ .past {
+  background-color: rgba(255, 255, 255, 0.063);
+  color: rgb(136, 129, 129);
 }
 .today {
-  background-color: whitesmoke;
-  color: black;
-  font-weight:bold;
+  background-color: rgba(252, 252, 252, 0.123);
+ font-weight:bold;
+font-size: large;
+}
+.calButtons{
+  display: block;
+  margin: auto;
+  
 }
 .calButtons button{
 margin: auto;
-display: inline-block;
-padding: 5px;
-margin-top: var(--medium-margin);
-font-size: large;
-background-color: transparent;
+font-size: xx-large;
 font-weight: bold;
+background-color: transparent;
+border: none;
+padding: 0 60px ;
+cursor: pointer;
+color: aliceblue;
+
+
 }
 .calButtons button:hover{
-  border: 2px solid skyblue;
-  cursor: pointer;
-  
-
+  box-shadow:0 0 15px 0px rgb(104, 164, 255);
 
 }
+
 .events{
-  display:block;
+display:flex;
 color:rgb(6, 131, 240);
-background-color: rgb(255, 255, 255);
+justify-content: space-evenly;
+align-items: center;
+margin:  auto ;
+padding:var(--large-margin) 20vw;
+border: var(--gold-border);
+background-color: rgba(0, 0, 0, 0.556);
+box-shadow: 0 1px 10px 1px rgb(65, 105, 225);;
+
 }
-
-
 .events h1{
-  color: rgb(5, 12, 65);
-  margin-bottom: var(--medium-margin);
+  color: rgb(232, 232, 232);
+  margin-bottom: var(--small-margin);
 }
 .events h2{
   margin-bottom: var(--medium-margin);
 }
+.calendar-cell{
+width: inherit;
+height:60px;
+border:2px solid transparent ;
+padding: var(--small-margin);
+}
+
+.future:hover, .today{
+  
+   border: 1px solid white;
+  cursor: pointer;
+}
 
 
 
-.date-number {
+
+
+/*media queries*/
+@media (max-width: 900px) {
+  /*table and calendar*/
+table {
+  position: relative;
+  display: inline; 
+  width: 80vw;
+}
+
+ td {
+  width:20px;
+  font-size: x-small;
+ }
+ .events{
+  margin-top: 50px ;
+  padding: var(--small-margin);
+ }
+.events h1{
   display: block;
+}
+  main{
+    width: 100vw;
+    padding: 0;
+  }
+  .name {
+   margin-top: 10px;
+  font-size: 2rem;
+  display: inline;
+  }
+  .line{
+    display: none;
+  
+  }
+ 
+  .introduction{
+    position: relative;
+    top: 50px;
+    min-width: 400px;
+   
+  }
+  .title
+  {
+    font-size: 2rem;
+    display: inline;
+ 
+  }
+  .id,.greeting{
+  position: absolute;
+  top: 90px;
+  }
+  nav{
+    min-width: 470px;
+    z-index: 1;
+  }
+  .about-para{
+    text-align: left;
+    min-width: 450px;
+    width:100%;
+  }
+
+  .skills-container{
+   
+    align-items: center;
+  justify-content: center;
+  width: min-content;
+  }
+.icon{
+  position: relative;
+  top: -100px;
+
+}
+
+ 
+.dot{
+  position: inherit;
+  width: 500px;
+  height: 100px;
+}
+}
+
+
+/*light-mode*/
+.light {
+  background-color: rgb(245, 245, 245);
+
+}
+.light h1, .light p, .light h3{
+  color: rgb(49, 49, 49);
+}
+.light h3{
+  color: darkblue;
+}
+.light img{
+  box-shadow: 0px 2px 0px 0px white, 
+  0 2px 100px 0 rgb(26, 25, 25);
+}
+.light .webinar-container>div, .light .webinar-container a{
+background-color: rgb(196, 194, 194);
+color: rgb(49, 49, 49);
+}
+.light .webinar-container a:hover{
+  color: rgb(1, 1, 121)
+}
+.light .read-more{
+  color: darkblue;
+  border:2px solid  rgb(49, 49, 49);
+  ;
+}
+.light .icon{
+display: inline;
+height: fit-content;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: royalblue;
+border-radius: 10px;
+}
+.light .skills-container>div{
+  color: rgb(49, 49, 49);
+}
+.light table{
+  background-color: rgb(236, 239, 241);
+  color: rgb(44, 42, 42);
+
+}
+.light table td, .light .calendar-cell::first-line{
+  color: var(--royalBlue);
+}
+ .light .date-number{
+    color: black;
+ }
+
+
+ .light .events{
+  background-color: transparent;
+ }
+
+ .light .calButtons button{
+  color: black;
+ }
+.light .toggle-area{
+  border:2px solid rgba(0, 0, 0, 0.63);
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.726);
+ 
+}
+
+.modal-content {
+  background-color: #fefefef5;
+  color:  var(--background);
+  margin: auto;
+  padding: 20px;
+  border: 2px solid rgb(0, 102, 255);
+  width:  30%;
+  align-items: center;
+  line-height: 2;
+ box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.11), 
+  0 2px 100px 0 rgba(218, 165, 32, 0.486);
+
+  
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -2,13 +2,10 @@ let currentMonth = new Date().getMonth();
 let currentYear = new Date().getFullYear();
 
 let events = [
-    { date: '2023-12-25', event: 'Christmas' },
-    { date: '2024-01-01', event: 'New Year' },
-    { date: '2023-12-20', event: 'Webinar' },
-    
+    { date: '2023-12-25', event: 'Christmas', time: '10:00 AM', location: 'HOME!!' },
+    { date: '2024-01-01', event: 'New Year', time: '12:00 AM', location: 'Town Square' },
+    { date: '2023-12-20', event: 'Webinar', time: '3:00 PM', location: 'Online' },
 ];
-
-
 
 function updateCalendar(month, year) {
     let table = document.getElementById('calendarTable');
@@ -32,7 +29,7 @@ function updateCalendar(month, year) {
                     return e.date === new Date(year, month, date).toISOString().split('T')[0];
                 });
                 if (event) {
-                    cell.innerHTML = '<div class="calendar-cell"><span class="date-number">' + date + '</span> <span style="color:red;">●</span> ' + event.event + '</div>';
+                    cell.innerHTML = '<div class="calendar-cell" onclick="displayEventDetails(\'' + event.event + '\', \'' + event.time + '\', \'' + event.location + '\')"><span class="date-number">' + date + '</span> <span style="color:red;">●</span> ' + event.event + '</div>';
                 } else {
                     cell.innerHTML = '<div class="calendar-cell"><span class="date-number">' + date + '</span></div>';
                 }
@@ -41,11 +38,39 @@ function updateCalendar(month, year) {
                 } else if (new Date(year, month, date) < new Date()) {
                     cell.classList.add('past');
                 }
+                else{
+                    cell.classList.add('future')
+                }
+              
                 date++;
             }
         }
     }
 }
+
+function displayEventDetails(event, time, location) {
+    let modal = document.getElementById('myModal');
+    let span = document.getElementsByClassName('close')[0];
+    let eventElement = document.getElementById('event');
+    let timeElement = document.getElementById('time');
+    let locationElement = document.getElementById('location');
+
+    eventElement.textContent = 'Event: ' + event;
+    timeElement.textContent = 'Time: ' + time;
+    locationElement.textContent = 'Location: ' + location;
+    modal.style.display = 'block';
+
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+}
+
 
 document.getElementById('prevMonth').addEventListener('click', function() {
     if (currentMonth > 0) {

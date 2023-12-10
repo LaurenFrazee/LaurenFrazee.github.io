@@ -52,7 +52,7 @@ class Particle {
       }
 
       canvas.position(400, 100);
-      canvas.style('z-index', '1');
+      canvas.style('z-index', '0');
 
     
     }

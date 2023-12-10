@@ -14,10 +14,17 @@
             <div data-include="components/header.html"></div>
     </header>
 
-    <main>
-        <div class="content-wrapper events">
+    <main id="mode">
+
+        <div class="content-wrapper  row">
+            <div class=" events column">
                 <h1>Upcoming Events</h1>
                 <h2 id="monthYear"></h2>
+                
+                <div class="calButtons">
+                    <button id="prevMonth">&lt</button>
+                    <button id="nextMonth">&gt</button> 
+                </div>
                 <table id="calendarTable">
                     <tr>
                         <th>Sun</th>
@@ -29,15 +36,20 @@
                         <th>Sat</th>
                     </tr>
                 </table>
-                <div class="calButtons">
-
-                <button id="prevMonth">Prev</button>
-                <button id="nextMonth">Next</button> 
-                </div>
                 
+            </div> 
 
-            <div class="right-content">
-               
+         
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p id="modal-content">
+                        <p id="event"></p>
+                        <p id="time"></p>
+                        <p id="location"></p>
+                      </p>
+                    </div>
+                 
             </div><!--end rc-->
 
 
